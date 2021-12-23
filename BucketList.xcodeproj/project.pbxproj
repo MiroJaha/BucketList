@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8490480E2774725C003E993D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490480D2774725C003E993D /* AppDelegate.swift */; };
 		849048102774725C003E993D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490480F2774725C003E993D /* SceneDelegate.swift */; };
-		849048122774725C003E993D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048112774725C003E993D /* ViewController.swift */; };
+		849048122774725C003E993D /* ShowItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048112774725C003E993D /* ShowItemTableViewController.swift */; };
 		849048152774725C003E993D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849048132774725C003E993D /* Main.storyboard */; };
 		849048182774725C003E993D /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 849048162774725C003E993D /* BucketList.xcdatamodeld */; };
 		8490481A2774725E003E993D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849048192774725E003E993D /* Assets.xcassets */; };
@@ -17,6 +17,11 @@
 		849048282774725F003E993D /* BucketListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048272774725F003E993D /* BucketListTests.swift */; };
 		849048322774725F003E993D /* BucketListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048312774725F003E993D /* BucketListUITests.swift */; };
 		849048342774725F003E993D /* BucketListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849048332774725F003E993D /* BucketListUITestsLaunchTests.swift */; };
+		8490484727747E04003E993D /* BucketList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8490484027747E04003E993D /* BucketList.xcdatamodeld */; };
+		8490484827747E04003E993D /* AddNewItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490484227747E04003E993D /* AddNewItemViewController.swift */; };
+		8490484A27747E04003E993D /* AddItemsDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490484427747E04003E993D /* AddItemsDelegate.swift */; };
+		8490484C27747E04003E993D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8490484627747E04003E993D /* Assets.xcassets */; };
+		8490485027747EEF003E993D /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8490484F27747EEF003E993D /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,7 @@
 		8490480A2774725C003E993D /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8490480D2774725C003E993D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8490480F2774725C003E993D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		849048112774725C003E993D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		849048112774725C003E993D /* ShowItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowItemTableViewController.swift; sourceTree = "<group>"; };
 		849048142774725C003E993D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		849048172774725C003E993D /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
 		849048192774725E003E993D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		8490482D2774725F003E993D /* BucketListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BucketListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		849048312774725F003E993D /* BucketListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITests.swift; sourceTree = "<group>"; };
 		849048332774725F003E993D /* BucketListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8490484127747E04003E993D /* BucketList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BucketList.xcdatamodel; sourceTree = "<group>"; };
+		8490484227747E04003E993D /* AddNewItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewItemViewController.swift; sourceTree = "<group>"; };
+		8490484427747E04003E993D /* AddItemsDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemsDelegate.swift; sourceTree = "<group>"; };
+		8490484627747E04003E993D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8490484F27747EEF003E993D /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +113,13 @@
 			children = (
 				8490480D2774725C003E993D /* AppDelegate.swift */,
 				8490480F2774725C003E993D /* SceneDelegate.swift */,
-				849048112774725C003E993D /* ViewController.swift */,
+				849048112774725C003E993D /* ShowItemTableViewController.swift */,
+				8490484427747E04003E993D /* AddItemsDelegate.swift */,
+				8490484F27747EEF003E993D /* TaskModel.swift */,
+				8490484227747E04003E993D /* AddNewItemViewController.swift */,
 				849048132774725C003E993D /* Main.storyboard */,
+				8490484627747E04003E993D /* Assets.xcassets */,
+				8490484027747E04003E993D /* BucketList.xcdatamodeld */,
 				849048192774725E003E993D /* Assets.xcassets */,
 				8490481B2774725E003E993D /* LaunchScreen.storyboard */,
 				8490481E2774725E003E993D /* Info.plist */,
@@ -237,6 +252,7 @@
 				8490481D2774725E003E993D /* LaunchScreen.storyboard in Resources */,
 				8490481A2774725E003E993D /* Assets.xcassets in Resources */,
 				849048152774725C003E993D /* Main.storyboard in Resources */,
+				8490484C27747E04003E993D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				849048122774725C003E993D /* ViewController.swift in Sources */,
+				849048122774725C003E993D /* ShowItemTableViewController.swift in Sources */,
 				849048182774725C003E993D /* BucketList.xcdatamodeld in Sources */,
+				8490484827747E04003E993D /* AddNewItemViewController.swift in Sources */,
+				8490484727747E04003E993D /* BucketList.xcdatamodeld in Sources */,
 				8490480E2774725C003E993D /* AppDelegate.swift in Sources */,
 				849048102774725C003E993D /* SceneDelegate.swift in Sources */,
+				8490485027747EEF003E993D /* TaskModel.swift in Sources */,
+				8490484A27747E04003E993D /* AddItemsDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +636,16 @@
 				849048172774725C003E993D /* BucketList.xcdatamodel */,
 			);
 			currentVersion = 849048172774725C003E993D /* BucketList.xcdatamodel */;
+			path = BucketList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		8490484027747E04003E993D /* BucketList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8490484127747E04003E993D /* BucketList.xcdatamodel */,
+			);
+			currentVersion = 8490484127747E04003E993D /* BucketList.xcdatamodel */;
 			path = BucketList.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
