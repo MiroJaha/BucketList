@@ -79,9 +79,17 @@ class ShowItemTableViewController: UITableViewController {
     
     //Delete Functionality
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        list.remove(at: indexPath.section)
-        //fetchAllItems()
-        tableView.reloadData()
+        let id = list[indexPath.section].id
+        TaskModel.deleteTaskWithObjective(id: id) { data, response, error in
+            if let error = error {
+                print(error)
+            }else {
+                print("Deleted Successfully")
+            }
+            DispatchQueue.main.sync {
+                self.fetchAllItems()
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -96,16 +104,27 @@ class ShowItemTableViewController: UITableViewController {
 }
     
 extension ShowItemTableViewController: AddItemDelegate {
-    //Add Functionality
+    //Add and Update Functionality
     func addNewItem(item: String, at indexPath: NSIndexPath?) {
         if let ip = indexPath {
-            //let itemIDInList = list[ip.section].id
-            list[ip.section].task = item
+            let id = list[ip.section].id
+            TaskModel.updateTaskWithObjective(id: id, objective: item) { data, response, error in
+                if let error = error {
+                    print(error)
+                }else {
+                    print("Updated Successfully")
+                }
+                DispatchQueue.main.sync {
+                    self.fetchAllItems()
+                }
+            }
         }
         else {
             TaskModel.addTaskWithObjective(objective: item) { data, response, error in
                 if let error = error {
                     print(error)
+                }else {
+                    print("Add Successfully")
                 }
                 DispatchQueue.main.sync {
                     self.fetchAllItems()
