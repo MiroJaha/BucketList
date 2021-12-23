@@ -103,9 +103,14 @@ extension ShowItemTableViewController: AddItemDelegate {
             list[ip.section].task = item
         }
         else {
-            list.append(dataModel(id: "aaa", task: item, date: "aaa"))
+            TaskModel.addTaskWithObjective(objective: item) { data, response, error in
+                if let error = error {
+                    print(error)
+                }
+                DispatchQueue.main.sync {
+                    self.fetchAllItems()
+                }
+            }
         }
-        //fetchAllItems()
-        tableView.reloadData()
     }
 }
