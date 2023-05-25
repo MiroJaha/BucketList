@@ -39,7 +39,7 @@ class ShowItemTableViewController: UITableViewController {
                             )
                         )
                     }
-                    DispatchQueue.main.sync { [self] in
+                    DispatchQueue.main.sync { [weak self] in
                         tableView.reloadData()
                     }
                 }
